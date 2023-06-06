@@ -44,14 +44,15 @@ section {
   margin-top: 1rem;
   border-radius: 5rem;
   background: #fff;
-  color: pink;
+  color: #333;
   padding: 0.9rem 3.5rem;
   cursor: pointer;
   font-size: 1.7rem;
+  outline: 2px solid #ffd4d4; 
 }
 
 .btn:hover {
-  background: #ea8383;
+  background: #ffd4d4;
 }
 
 header {
@@ -300,6 +301,18 @@ header .fa-bars {
   font-weight: lighter;
   text-decoration: line-through;
 }
+
+.products .box-container .box a{
+    color: #333; /* Warna teks normal */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Efek transisi perubahan warna */
+  }
+  
+  .products .box-container .box a:hover {
+    color: pink; /* Warna teks saat baten */
+  }
+  
+
 
 .review .box-container {
   display: flex;
