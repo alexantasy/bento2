@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link rel="icon" href="img/logoo.png">
+
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <div>
+    <!-- Kontainer form login -->
+    <div class="form-wrapper sign-in">
+        <!-- Wrapper untuk form login -->
+        <form action="javascript:void(0);">
+            <!-- Form login -->
+            <h2>Login</h2>
+            <!-- Judul form login -->
+            <div class="input-group">
+                <!-- Grup input untuk username -->
+                <input type="text" id="username" required>
+                <!-- Input untuk username -->
+                <label for="username">Username</label>
+                <!-- Label untuk input username -->
+            </div>
+            <div class="input-group">
+                <!-- Grup input untuk password -->
+                <input type="password" id="password" required>
+                <!-- Input untuk password -->
+                <label for="password">Password</label>
+                <!-- Label untuk input password -->
+            </div>
+            <div class="remember">
+                <!-- Opsi "Remember me" -->
+                <label><input type="checkbox"> Remember me</label>
+                <!-- Checkbox "Remember me" -->
+            </div>
+            <button type="button" onclick="checkLogin()" class="btn">Login</button>
+            <!-- Tombol untuk login -->
+            <div class="signUp-link">
+                <!-- Link untuk mendaftar -->
+                <p>Don't have an account? <a href="Sign-up.html" class="signUpBtn-link">Sign Up</a></p>
+                <!-- Teks untuk mendaftar -->
+            </div>
+        </form>
+    </div>
+    <p id="login-message"></p>
+    <!-- Pesan hasil login -->
+</div>
+
+
+  <script>
+   function checkLogin() {
+    // Variabel untuk username yang diharapkan dan password yang diharapkan
+    var expectedUsername = "alexa";
+    var expectedPassword = "alexa123";
+    
+    // Variabel untuk nilai username dan password yang dimasukkan pengguna
+    var inputUsername = document.getElementById("username").value;
+    var inputPassword = document.getElementById("password").value;
+    
+    // Variabel untuk menampilkan pesan hasil login
+    var loginMessage = document.getElementById("login-message");
+
+    // Perbandingan nilai username dan password yang dimasukkan dengan nilai yang diharapkan
+    if (inputUsername === expectedUsername && inputPassword === expectedPassword) {
+        // Jika nilai username dan password cocok dengan yang diharapkan, arahkan ke halaman index.html
+        window.location.href = "index.html";
+    }
+}
+
+  </script>
+</body>
+</html>

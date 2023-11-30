@@ -50,6 +50,18 @@ section {
   font-size: 1.7rem;
   outline: 2px solid #ffd4d4; 
 }
+.btn-se {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #fff;
+  color: #333;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  outline: 2px solid #ffd4d4; 
+  margin-left: 540px;
+}
 
 .btn:hover {
   background: #ffd4d4;
@@ -420,7 +432,35 @@ header .fa-bars {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 19px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  flex: 1;
+  padding: 0 20px;
+}
+
 
 .footer .credit {
   text-align: center;
@@ -436,6 +476,7 @@ header .fa-bars {
 .footer .credit span {
   color: #ea8383;
   align-items: center;
+  text-align: center;
 }
 
 
